@@ -1,0 +1,16 @@
+{
+  "id": "2013160",
+  "name": "kkkk",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "327322",
+      "name": "洗澡",
+      "font_class": "xizao",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    }
+  ]
+}

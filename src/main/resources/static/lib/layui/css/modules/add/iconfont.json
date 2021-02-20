@@ -1,0 +1,16 @@
+{
+  "id": "2013160",
+  "name": "kkkk",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1012132",
+      "name": "加",
+      "font_class": "wuuiconxiangjifangda",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}

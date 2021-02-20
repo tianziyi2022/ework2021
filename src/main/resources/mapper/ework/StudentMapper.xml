@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hebutgo.ework.mapper.StudentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hebutgo.ework.entity.Student">
+        <result column="id" property="id" />
+        <result column="stu_class" property="stuClass" />
+        <result column="stu_number" property="stuNumber" />
+        <result column="name" property="name" />
+        <result column="sex" property="sex" />
+        <result column="major" property="major" />
+        <result column="qq_number" property="qqNumber" />
+        <result column="email" property="email" />
+        <result column="wechat_number" property="wechatNumber" />
+        <result column="phone" property="phone" />
+        <result column="apart" property="apart" />
+        <result column="birth" property="birth" />
+        <result column="nation" property="nation" />
+        <result column="religion" property="religion" />
+        <result column="politics" property="politics" />
+        <result column="address" property="address" />
+        <result column="family_phone" property="familyPhone" />
+        <result column="father_name" property="fatherName" />
+        <result column="father_company" property="fatherCompany" />
+        <result column="father_phone" property="fatherPhone" />
+        <result column="mother_name" property="motherName" />
+        <result column="mother_company" property="motherCompany" />
+        <result column="mother_phone" property="motherPhone" />
+        <result column="work" property="work" />
+        <result column="reward" property="reward" />
+        <result column="speciality" property="speciality" />
+        <result column="habit" property="habit" />
+        <result column="aid" property="aid" />
+        <result column="post_code" property="postCode" />
+        <result column="note" property="note" />
+    </resultMap>
+
+</mapper>

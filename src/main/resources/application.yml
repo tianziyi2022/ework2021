@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+spring:
+  http:
+    multipart:
+      max-file-size: 50Mb
+      max-request-size: 50Mb
+
+  datasource:
+    username: root
+    password: tzy20000712
+    url: jdbc:mysql://cdb-7baisrai.bj.tencentcdb.com:10225/ework?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+

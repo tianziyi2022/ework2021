@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>新生数据核验系统</title>
+    <script src="lib/layui/layui.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lib/layui/css/layui.css">
+    <script src="config/config.js"></script>
+    <script src="lib/axios/axios.min.js"></script>
+    <script src="utils/Http.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="body-container layui-container">
+        <div class="top-query">
+            <form class="layui-form layui-form-pane middle-form">
+                <div class="layui-header">
+                    <h2 style="text-align: center"><font size="6">新生数据核验系统</font></h2>
+                </div>
+                <div class="layui-form-item top-item-container">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">身份证号</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="idCard" autocomplete="off" class="layui-input" required>
+<!--                                   lay-verify="required|phone">-->
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">学号</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="studentId" autocomplete="off" class="layui-input" required
+                                   lay-verify="required|number">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">查询信息</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <div>
+                <h2 style="text-align: center"><font size="4">提示：请在确认信息后刷新页面</font></h2>
+            </div>
+        </div>
+        <div class="middle-table">
+            <table class="layui-hide" id="test" lay-filter="test"></table>
+        </div>
+        <div class="bottom-confirm-container">
+            <div class="layui-btn-container bottom-confirm">
+                <button type="button" lay-submit lay-filter="confirm" class="layui-btn bottom-button">确认无误</button>
+                <button type="button" lay-submit lay-filter="hasProblem" class="layui-btn layui-btn-normal bottom-button">信息有误</button>
+            </div>
+        </div>
+        <div>
+            <div class="layui-edge-bottom">
+                <h2 style="text-align: center"><font color="#a9a9a9" size="2">制作人：田梓毅 田朗博</font></h2>
+                <h2 style="text-align: center"><font color="#a9a9a9" size="2">tianziyi2022@163.com</font></h2>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

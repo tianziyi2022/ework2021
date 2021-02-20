@@ -1,0 +1,28 @@
+.body-container{
+    margin-top: 40px!important;
+}
+.middle-form{
+
+}
+.layui-input-inline{
+    min-width: 30%;
+}
+.bottom-confirm-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.bottom-button{
+    margin-left: 20px!important;
+    margin-right: 20px!important;
+}
+.top-item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
