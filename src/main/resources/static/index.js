@@ -6,6 +6,7 @@ async function main() {
         const dataMap = {//映射关系
             'name': '姓名',
             'phone': '手机号码',
+            'address': '（返校前）居住地址（具体到门牌号）',
             'studentId': '学号',
             'idCard': '身份证号',
             'wayToTianjin': '自驾/公共交通',
@@ -33,7 +34,7 @@ async function main() {
             , title: '个人信息确认'
             , cols
             , data
-            , limit: 16
+            , limit: 17
         });
         form.on('submit(formDemo)', function (res) {
             Http.request({
@@ -66,7 +67,7 @@ async function main() {
                     , title: '个人信息确认'
                     , cols
                     , data
-                    , limit: 16
+                    , limit: 17
                 });
             }, error => {
                 layer.msg(error.msg)
