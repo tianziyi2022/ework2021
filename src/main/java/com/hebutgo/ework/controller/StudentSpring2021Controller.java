@@ -5,10 +5,7 @@ import com.hebutgo.ework.common.ApiResponse;
 import com.hebutgo.ework.common.CommonConstant;
 import com.hebutgo.ework.common.ErrorCodeEnum;
 import com.hebutgo.ework.common.exception.BizException;
-import com.hebutgo.ework.entity.CheckRequest;
-import com.hebutgo.ework.entity.GetSpringInfoRequest;
-import com.hebutgo.ework.entity.StudentSpring2021;
-import com.hebutgo.ework.entity.StudentSpring2021Vo;
+import com.hebutgo.ework.entity.*;
 import com.hebutgo.ework.service.IStudentSpring2021Service;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -90,6 +87,26 @@ public class StudentSpring2021Controller {
             return ApiResponse.error(ErrorCodeEnum.SYSTEM_DEFAULT_ERROR);
         }
         logger.info("信息核验（错误）成功"+checkRequest.getId());
+        return ApiResponse.success(string);
+    }
+
+    @CrossOrigin
+    @ApiOperation(value = "修改信息",tags = CommonConstant.STUDENTSPRING2021)
+    @PostMapping("/update")
+    public ApiResponse<String> update(
+            @RequestBody UpdateSpringRequest updateSpringRequest
+            ){
+        String string;
+        try{
+            string = iStudentSpring2021Service.update(updateSpringRequest);
+        }catch (BizException e) {
+            logger.error("信息修改失败"+updateSpringRequest.getId(), e);
+            return ApiResponse.error(e.getErrMessage());
+        } catch (Exception e) {
+            logger.error("信息修改失败"+updateSpringRequest.getId(), e);
+            return ApiResponse.error(ErrorCodeEnum.SYSTEM_DEFAULT_ERROR);
+        }
+        logger.info("信息修改成功"+updateSpringRequest.toString());
         return ApiResponse.success(string);
     }
 }

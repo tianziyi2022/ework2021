@@ -3,6 +3,7 @@ package com.hebutgo.ework.service;
 import com.hebutgo.ework.entity.StudentSpring2021;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.hebutgo.ework.entity.StudentSpring2021Vo;
+import com.hebutgo.ework.entity.UpdateSpringRequest;
 
 /**
  * <p>
@@ -19,4 +20,6 @@ public interface IStudentSpring2021Service extends IService<StudentSpring2021> {
     public String correct(Integer id);
 
     public String wrong(Integer id);
+
+    public String update(UpdateSpringRequest updateSpringRequest);
 }

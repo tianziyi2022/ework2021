@@ -7,6 +7,6 @@ const config={
         url:"/ework/studentSpring2021/correct"
     },
     problem:{
-        url:"/ework/studentSpring2021/wrong"
+        url:"/ework/studentSpring2021/update"
     }
 }
