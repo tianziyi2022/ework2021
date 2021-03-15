@@ -120,7 +120,17 @@
 			<version>26.0-jre</version>
 		</dependency>
 
-
+<!--		导出到excel依赖-->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>RELEASE</version>
+		</dependency>
 		<!--Gson-->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>

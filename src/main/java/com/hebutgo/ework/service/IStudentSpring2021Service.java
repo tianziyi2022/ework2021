@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.hebutgo.ework.entity.StudentSpring2021Vo;
 import com.hebutgo.ework.entity.UpdateSpringRequest;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -22,4 +24,6 @@ public interface IStudentSpring2021Service extends IService<StudentSpring2021> {
     public String wrong(Integer id);
 
     public String update(UpdateSpringRequest updateSpringRequest);
+
+    public List<StudentSpring2021> getAllInfo();
 }
